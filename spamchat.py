@@ -1,10 +1,3 @@
-#!/usr/bin/python2
-
-# Creator :  ./HACKDAYCYBERTEAM.)
-# Team : BlackHat Cyber team
-# Thanks To All Member
-# Recode Tidak Akan Membuat Anda Menjadi Pencipta Kode :3
-
 from requests.exceptions import ConnectionError
 from time import sleep
 import requests
@@ -23,14 +16,7 @@ W = '\033[1;37m'
 A = '\033[90m'
 
 def banner():
-	print(''+C+'''
-  ____                         __        __    
- / ___| _ __   __ _ _ __ ___   \ \      / /_ _ 
- \___ \| '_ \ / _` | '_ ` _ \   \ \ /\ / / _` |
-  ___) | |_) | (_| | | | | | |   \ V  V / (_| |
- |____/| .__/ \__,_|_| |_| |_|    \_/\_/ \__,_|
-       |_|                                     
-                   '''+W+'Creator : OZEEBLACK\n\t\t   ISENG CUMA COPY')
+	print(''+C+W+'Creator : OZEEBLACK\n\t\t   ISENG CUMA COPY')
                    
 def main():
 	os.system('clear')
@@ -78,9 +64,7 @@ def main():
 			print('')
 			print(''+C+'Pengiriman'+W+' Sukses !')
 			print('')
-			print(W+'Ulang Lagi Kalo Mau Banyak :v')
-			print(W+'Maksimal Pengulangan 3 x Dalam 25 Menit :`-|')
-			print('')
+	
 			
 	except:
 		print('')
